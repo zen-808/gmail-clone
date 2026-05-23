@@ -1,8 +1,25 @@
+import { useState } from 'react'
+import Sidebar from './components/Sidebar'
+import EmailList from './components/EmailList'
+import EmailDetail from './components/EmailDetail'
 
 function App() {
+  const [selectedEmail, setSelectedEmail] = useState(null)
+
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-400 underline">Gmail Clone</h1>
+    <div className="h-screen flex bg-gray-900 text-white">
+      <div className="w-64 flex-shrink-0">
+        <Sidebar />
+      </div>
+      <div className="w-96 flex-shrink-0 border-r border-gray-700">
+        <EmailList
+          onSelectEmail={setSelectedEmail}
+          selectedEmailId={selectedEmail?.id}
+        />
+      </div>
+      <div className="flex-1">
+        <EmailDetail email={selectedEmail} />
+      </div>
     </div>
   )
 }
