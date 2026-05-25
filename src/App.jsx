@@ -11,7 +11,7 @@ function App() {
     
     <div className="h-screen flex bg-gray-900 text-white">
       <div className="w-64 flex-shrink-0">
-        <Header />
+        <Header content="Gmail clone" />
         <Sidebar />
       </div>
       <div className="w-96 flex-shrink-0 border-r border-gray-700">
