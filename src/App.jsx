@@ -2,13 +2,16 @@ import { useState } from 'react'
 import Sidebar from './components/Sidebar'
 import EmailList from './components/EmailList'
 import EmailDetail from './components/EmailDetail'
+import Header from './components/Header'
 
 function App() {
   const [selectedEmail, setSelectedEmail] = useState(null)
 
   return (
+    
     <div className="h-screen flex bg-gray-900 text-white">
       <div className="w-64 flex-shrink-0">
+        <Header />
         <Sidebar />
       </div>
       <div className="w-96 flex-shrink-0 border-r border-gray-700">
