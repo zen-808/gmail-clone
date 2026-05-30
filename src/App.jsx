@@ -10,14 +10,14 @@ function App() {
 
   return (
     
-    <div className="h-screen flex bg-gray-900 text-white overflow-hidden">
+    <div className="h-screen flex bg-gray-900 text-white">
       {/* Cambiar h-screen por min-h-screen */}
-      <div className="w-64 flex-shrink-0">
+      <div className="w-64 flex-srhrink-0 max-height: [85vh] ">
         <Header content="Gmail clone" />
         <Sidebar />
         <LikeButton />
       </div>
-      <div className="w-96 flex-shrink-0 border-r border-gray-700">
+      <div className="w-96 shrink-0 border-r border-gray-700">
         <EmailList
           onSelectEmail={setSelectedEmail}
           selectedEmailId={selectedEmail?.id}

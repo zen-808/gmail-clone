@@ -27,7 +27,7 @@ function EmailList({ onSelectEmail, selectedEmailId }) {
         >
           <div className="flex justify-between items-center mb-1">
             <span className="text-sm truncate">{email.from}</span>
-            <span className="text-xs text-gray-400 flex-shrink-0 ml-2">{email.time}</span>
+            <span className="text-xs text-gray-400 shrink-0 ml-2">{email.time}</span>
           </div>
           <p className="text-sm truncate">{email.subject}</p>
           <p className="text-xs text-gray-400 truncate mt-0.5">{email.snippet}</p>
