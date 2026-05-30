@@ -12,7 +12,7 @@ function App() {
     
     <div className="h-screen flex bg-gray-900 text-white">
       {/* Cambiar h-screen por min-h-screen */}
-      <div className="w-64 flex-srhrink-0 max-height: [85vh] ">
+      <div className="w-64 shrink-0 max-height: [85vh] ">
         <Header content="Gmail clone" />
         <Sidebar />
         <LikeButton />
