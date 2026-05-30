@@ -1,7 +1,7 @@
 function Header(props) {
     return (
      <div>
-        <p>📧 Mi Correo</p>
+        <p>📧 Test email</p>
         <h1>{props.content}</h1> 
      </div>
     )
