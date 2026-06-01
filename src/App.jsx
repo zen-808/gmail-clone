@@ -38,7 +38,7 @@ function App() {
       <div className="w-64 shrink-0 max-h-[85vh]">
         
         {/* 12. Renderiza el Header pasándole el título a través de la propiedad (prop) 'content'. */}
-        <Header content="Gmail clone" />
+        <Header content="Front-email" />
         
         {/* 13. Renderiza la barra lateral de navegación. */}
         <Sidebar />
