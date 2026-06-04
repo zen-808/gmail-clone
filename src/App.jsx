@@ -15,6 +15,8 @@ import Header from './components/Header'
 
 // 6. Importa un componente interactivo de botón "Me gusta" (o similar) alojado en la interfaz.
 import LikeButton from './components/LikeButton'
+// 6.1 Importa un componente de JobList para mostrar ofertas de trabajo (aunque no se usa en este diseño, podría ser parte de futuras funcionalidades).
+import JobList from './components/JobList'
 
 // 7. Define el componente funcional principal 'App', que actúa como el orquestador global de la aplicación.
 function App() {
@@ -74,6 +76,9 @@ function App() {
         <EmailDetail email={selectedEmail} />
       
       {/* 21. Cierre de la columna derecha. */}
+      </div>
+      <div className="w-48 shrink-0 max-h-[85vh] overflow-y-auto">
+      <JobList />
       </div>
 
     {/* 22. Cierre del contenedor principal. */}
