@@ -25,9 +25,9 @@ function App() {
   // Se inicializa en 'null' porque al abrir la aplicación por primera vez no hay ningún correo seleccionado.
   // 'setSelectedEmail' es la función que usaremos para cambiar este valor cuando se haga clic en un correo.
   const [selectedEmail, setSelectedEmail] = useState(null)
-
+  const handleSaveJob = (job) => console.log('Oferta guardada:', job.title)
   // 9. El bloque 'return' define la estructura de la interfaz de usuario utilizando sintaxis JSX.
-  
+
   return (
     
     // 10. CONTENEDOR PRINCIPAL: Usa Flexbox para alinear las columnas de forma horizontal.
@@ -79,7 +79,7 @@ function App() {
       {/* 21. Cierre de la columna derecha. */}
       </div>
       <div className="w-48 shrink-0 max-h-[85vh] overflow-y-auto">
-      <JobList />
+      <JobList onSave={handleSaveJob} />
       </div>
 
     {/* 22. Cierre del contenedor principal. */}

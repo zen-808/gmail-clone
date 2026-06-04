@@ -2,7 +2,7 @@ import mockJobs from '../data/mockJobs'
 // 1. Definimos el componente JobList.
 //    Recibe un objeto como parámetro y extrae directamente la prop "jobs" mediante destructuración.
 //    "jobs" será un array de objetos, cada uno representando una oferta de trabajo.
-function JobList() {
+function JobList({onSave}) {
 
   // 2. Todo componente debe devolver JSX.
   return (
@@ -31,7 +31,7 @@ function JobList() {
             {/* 8. Párrafo que muestra el nombre de la empresa,
                    accediendo a la propiedad "company" del objeto "job". */}
             <p>{job.company}</p>
-            
+            <button onClick={() => onSave(job)}>Guardar</button>
           </div> // Cierra el div contenedor de la oferta actual.
         )) // Cierra la función flecha y la llamada a .map().
       }
