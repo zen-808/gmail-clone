@@ -27,6 +27,7 @@ function App() {
   const [selectedEmail, setSelectedEmail] = useState(null)
 
   // 9. El bloque 'return' define la estructura de la interfaz de usuario utilizando sintaxis JSX.
+  
   return (
     
     // 10. CONTENEDOR PRINCIPAL: Usa Flexbox para alinear las columnas de forma horizontal.
