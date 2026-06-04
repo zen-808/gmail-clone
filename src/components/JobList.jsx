@@ -5,6 +5,10 @@ import mockJobs from '../data/mockJobs'
 function JobList({onSave}) {
 
   // 2. Todo componente debe devolver JSX.
+  if(mockJobs.length === 0) {
+    return <p>No hay ofertas disponibles</p>
+  }
+
   return (
     // 3. Elemento raíz: un div que contendrá toda la lista de ofertas.
     //    JSX solo permite devolver un único elemento padre.
